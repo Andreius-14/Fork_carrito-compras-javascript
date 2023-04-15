@@ -1,0 +1,6 @@
+🌿🌱🌲■
+
+■ Lo importante aqui es el Javascript  y su funcionamiento
+
+■ Este proyecto logra - Actualizar un numero con javascript parecido al useState
+sin necesidad de Actualizar la pagina
