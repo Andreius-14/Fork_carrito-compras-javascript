@@ -1,17 +1,13 @@
+// 🟥🟥🟥🟥🟥🟥 CONSTANTES - Enlaces HTML  🟥🟥🟥🟥🟥🟥
+//
 // Header - Enlace
 const btnCart = document.querySelector(".container-cart-icon");
 const containerCartProducts = document.querySelector( ".container-cart-products",);
-// Header - Enlace
 const cartInfo = document.querySelector(".cart-product");
 const rowProduct = document.querySelector(".row-product");
-// Header - Evento
-btnCart.addEventListener("click", () => { containerCartProducts.classList.toggle("hidden-cart"); });
-
-/* ========================= */
 
 // Cuerpo - Enlace 
 const productsList = document.querySelector(".container-items");
-// Cuerpo - Enlace
 const valorTotal = document.querySelector(".total-pagar");
 const countProducts = document.querySelector("#contador-productos");
 const cartEmpty = document.querySelector(".cart-empty");
@@ -21,6 +17,10 @@ const cartTotal = document.querySelector(".cart-total");
 let allProducts = [];
 
 // 🟥🟥🟥🟥🟥🟥 EVENTOS Y FUNCIONES  🟥🟥🟥🟥🟥🟥
+
+
+// 💀 Header - Evento
+btnCart.addEventListener("click", () => { containerCartProducts.classList.toggle("hidden-cart"); });
 
 /*
   💀 Evento == se Enfoca en Dos Partes
@@ -134,6 +134,7 @@ const showHTML = () => {
     totalOfProducts = totalOfProducts + product.quantity;
   });
 
+  //Actualiza valores html contador + Dinero Total
   valorTotal.innerText = `$${total}`;
   countProducts.innerText = totalOfProducts;
 };
